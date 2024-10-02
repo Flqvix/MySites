@@ -106,11 +106,14 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('username').textContent = data.data.discord_user.global_name;
             document.getElementById('pfp-image').src = `https://cdn.discordapp.com/avatars/${data.data.discord_user.id}/${data.data.discord_user.avatar}?size=1024&width=0&height=256`;
             if (data.data.spotify) {
-                document.getElementById('status').innerHTML = `<i class="fa-brands fa-spotify"></i> ${data.data.spotify.song}`;
+                document.getElementById('songName').innerHTML = `<i class="fa-brands fa-spotify"></i> <a href="https://open.spotify.com/track/${data.data.spotify.track_id}" target="_blank">${data.data.spotify.song.replaceAll(';', ',')}</a>`;
+                document.getElementById('artistName').innerHTML = `<i class="fa-brands fa-spotify" style="opacity: 0"></i> ${data.data.spotify.artist.replaceAll(';', ',')}`;
+
                 presence_image.style.opacity = '1';
                 presence_image.src = data.data.spotify.album_art_url;
             } else {
-                document.getElementById('status').textContent = 'Not listening to anything.';
+                document.getElementById('songName').textContent = 'Not listening to anything.';
+                document.getElementById('artistName').textContent = '';
                 presence_image.style.opacity = '0';
             }
 
