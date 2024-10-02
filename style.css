@@ -297,7 +297,7 @@ img#presence-image {
     }
 
     .profile-image img {
-        max-width: 50%;
+        max-width: 35%;
     }
 
     #container {
@@ -308,6 +308,7 @@ img#presence-image {
 
     .presence {
         max-width: 100%;
+        margin-block: 1rem;
     }
 
     .social-links {
