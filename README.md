@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-Hi!
 =======
 # Flavy's Personal Webpage
 
@@ -38,4 +36,3 @@ This repository contains the source code for **Flavy's Personal Webpage**, a sim
 
 - [Font Awesome 6.6.0](https://cdnjs.com/libraries/font-awesome): Used for social media icons and other UI elements.
 - [Discord Profile Images](https://discordapp.com): Discord avatar images for dynamic presence.
->>>>>>> 72ed7c5 (	new file:   README.md)
