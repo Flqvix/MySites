@@ -17,6 +17,7 @@ This repository contains the source code for **Flavy's Personal Webpage**, a sim
 - **style.css**: The external stylesheet that handles the design and layout.
 - **index.js**: A JavaScript file that controls interactivity on the page.
 - **bg.mp4**: Background video (not included in the repo for size considerations, but you can add your own).
+- **audioBg.mp3**: Background audio (not included, but you can add your own).
 
 ## How to Use
 
