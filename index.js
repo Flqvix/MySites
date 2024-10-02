@@ -1,5 +1,6 @@
 const clickToEnter = document.getElementById('clickToEnter');
 const audio = new Audio('/audioBg.mp3');
+audio.loop = true;
 const bg = document.getElementById('bg');
 
 clickToEnter.addEventListener('click', () => {
