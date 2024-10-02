@@ -1,4 +1,3 @@
-=======
 # Flavy's Personal Webpage
 
 This repository contains the source code for **Flavy's Personal Webpage**, a simple yet interactive profile page that includes a background video, user presence info, and links to various social profiles. The page is built with HTML, CSS, and JavaScript, with icons provided by Font Awesome.
