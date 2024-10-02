@@ -144,8 +144,11 @@ body {
     position: relative;
 }
 
-.social-links a {
+.social-links button {
     display: flex;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif !important;
     align-items: center;
     justify-content: center;
     background-color: var(--bg);
@@ -161,14 +164,14 @@ body {
     position: relative;
 }
 
-.social-links a i {
+.social-links button i {
     position: absolute;
     text-shadow: 0 0 10px var(--glow);
     left: 10px;
     margin-right: 0;
 }
 
-.social-links a:hover {
+.social-links button:hover {
     background-color: var(--glow);
 }
 
@@ -278,7 +281,7 @@ img#presence-image {
         justify-content: center;
     }
 
-    .social-links a {
+    .social-links button {
         padding: 5px 10px;
     }
 }
