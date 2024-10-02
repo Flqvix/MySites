@@ -1,24 +1,20 @@
 const clickToEnter = document.getElementById('clickToEnter');
-const audio = new Audio('/audioBg.mp3');
-audio.loop = true;
 const bg = document.getElementById('bg');
 
 clickToEnter.addEventListener('click', () => {
     document.getElementById('body').classList.remove('hidden');
     clickToEnter.style.display = 'none';
-    audio.play();
-    audio.volume = 0.2;
+    bg.volume = 0.2;
     bg.play();
 });
 
 const pause = document.getElementById('pause');
 pause.addEventListener('click', () => {
-    if (audio.paused) {
-        audio.play();
-        audio.volume = 0.2;
+    if (bg.volume == 0) {
+        bg.volume = 0.2;
         pause.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
     } else {
-        audio.pause();
+        bg.volume = 0;
         pause.innerHTML = '<i class="fa-solid fa-volume-mute"></i>';
     }
 });
